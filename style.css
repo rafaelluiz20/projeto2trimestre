@@ -1,82 +1,62 @@
-color: var(--verde);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
-.botao {
-    font-family: 'Chakra Petch', sans-serif;
-    font-family: "Crakra Petch", sans-serif;
-    background-color: var(--botao-inativo);
-    color: var(--branco);
-    display: flex;
-@@ -59,73 +58,4 @@ body {
-
-.botoes {
-    display: block;
-}
-
-.botao.ativo {
-    background-color: var(--botao-ativo);
-    border-bottom: 4px solid var(--verde);
-}
-
-.abas-textos {
-    background-color: var(--texto-fundo);
-    padding: 40px;
-    border-radius: 0 0 40px 40px;
-}
-
-.aba-conteudo.ativo {
-    display: block;
-}
-
-.aba-conteudo {
-    display: none;
-}
-
-.aba-conteudo-titulo-principal {
-    font-size: 28px;
-    text-align: center;
-}
-
-.aba-conteudo-titulo-secundario {
-    text-align: center;
-    color: var(--verde);
-    text-transform: uppercase;
-}
-
-.contador {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+    height: 100vh;
 }
 
-.contador-digito {
-    padding: 0 16px;
+.container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
     text-align: center;
-    min-width: 100px;
+    width: 300px;
 }
 
-.contador-digito-numero {
-    font-size: 80px;
-    margin: 0;
-
+h1 {
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.contador-digito-texto {
-    color: var(--verde);
-    font-size: 20px;
-    margin: 0;
-
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
 }
 
-@media screen and (min-width: 768px) {
-    .botoes {
-        display: flex;
-    }
+input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
 
-    .botao:first-child {
-        border-radius: 40px 0 0 0;
-    }
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
-    .botao:last-child {
-        border-radius: 0 40px 0 0;
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
